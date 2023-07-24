@@ -18,7 +18,7 @@ public class MeshLoader {
     private static FloatBuffer createFloatBuffer(float[] data) {
         FloatBuffer buffer = BufferUtils.createFloatBuffer(data.length);
         buffer.put(data);
-        buffer.flip();  //  close to writing
+        buffer.flip();  //  close for writing
         return buffer;
     }
 
